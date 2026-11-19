@@ -1,6 +1,8 @@
 # Tennis TV — Платформа за тенис стрийминг и бизнес анализи
 
+* **Име и фамилия:** `Димитър Стойчев`
 * **Факултетен номер:** `2401321073`
+* **Специалност:** `Софтуерно инженерство`
 * **Дисциплина:** Софтуерно моделиране и анализ (Software Modeling and Analysis)
 
 ---
@@ -22,9 +24,9 @@
 ## 2. Съдържание на директорията
 
 * `README.md` — Описание на проекта и ръководство за стартиране.
-* `TennisTV_DB.sql` — T-SQL скрипт за създаване на оперативната база данни, ограниченията, програмираните обекти и тестовите данни.
-* `TennisTV_DW.sql` — T-SQL скрипт за изграждане на Data Warehouse структурата и изпълнение на ETL зареждането.
-* `TennisTV_DWH_UML.drawio` / `TennisTV_DWH_UML.png` — UML диаграма на многомерния модел на данните.
+* `TennisTV_DB_SQL.sql` — T-SQL скрипт за създаване на оперативната база данни, ограниченията, програмираните обекти и тестовите данни.
+* `TennisTV_DW_SQL.sql` — T-SQL скрипт за изграждане на Data Warehouse структурата и изпълнение на ETL зареждането.
+* `TennisTV_DW.drawio` / `TennisTV_DW.png` — UML диаграма на многомерния модел на данните.
 * `TennisTV_Report.pbix` / `TennisTV_Report.pdf` — Интерактивен Power BI отчет и негов PDF експорт.
 
 ---
@@ -47,7 +49,7 @@
 2. Натиснете **`Execute`** (`F5`). Скриптът автоматично ще създаде базата `TennisTV_DW`, ще генерира времевото измерение (`Dim_Date`), ще зареди останалите 5 измерения и ще прехвърли агрегираните данни в 3-те таблици факти от `TennisTV_DB`.
 
 ### Стъпка 3: Преглед на UML диаграмата и Power BI отчета
-1. **UML модел:** Отворете **`TennisTV_DWH_UML.png`** за директен преглед или заредете **`TennisTV_DWH_UML.drawio`** в [app.diagrams.net](https://app.diagrams.net/).
+1. **UML модел:** Отворете **`TennisTV_DW.png`** за директен преглед или заредете **`TennisTV_DW.drawio`** в [app.diagrams.net](https://app.diagrams.net/).
 2. **Power BI дашборд:**
    * Отворете **`TennisTV_Report.pbix`** чрез **Microsoft Power BI Desktop** (или прегледайте статичния експорт **`TennisTV_Report.pdf`**).
    * При нужда от обновяване на данните от вашия локален SQL Server екземпляр, изберете **`Home`** $\rightarrow$ **`Refresh`** (или променете името на сървъра от `Transform data` $\rightarrow$ `Data source settings`).
